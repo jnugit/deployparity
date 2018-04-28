@@ -10,6 +10,8 @@ docker-compose up -d
 ### log
 docker-compose logs -f
 
+### Stop and remove containers, networks, images, and volumes
+docker-compose down
 ## TO DO LIST
 * add ethstats monitor
 ```
