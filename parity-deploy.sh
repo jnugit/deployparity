@@ -1,4 +1,5 @@
 #!/bin/bash
+# Copyright 2017 Parity Technologies (UK) Ltd.
 CHAIN_NAME="parity"
 CHAIN_NODES="1"
 CLIENT="0"
