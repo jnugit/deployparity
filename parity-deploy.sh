@@ -94,7 +94,7 @@ build_spec() {
 
 build_docker_config_poa() {
 
- echo "version: '2.0'" > docker-compose.yml
+ echo "version: '3.0'" > docker-compose.yml
  echo "services:" >> docker-compose.yml
 
  for x in ` seq 1 $CHAIN_NODES ` ; do
