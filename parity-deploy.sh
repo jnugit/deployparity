@@ -15,7 +15,7 @@ OPTIONAL:
         --name name_of_chain. Default: parity
         --nodes number_of_nodes (if using aura / tendermint) Default: 2
         --ethstats - Enable ethstats monitoring of authority nodes. Default: Off
-        --expose - Expose a specific container on ports 8180 / 8545 / 30303. Default: Config specific
+        --expose - Expose a specific container on ports 3079 / 3778 / 30303. Default: Config specific
 
 NOTE:
     input.json - Custom spec files can be inserted by specifiying the path to the json file.
@@ -186,7 +186,7 @@ create_node_config_instantseal() {
 
 expose_container() {
 
-  sed -i "s@container_name: $1@&\n    ports:\n    - 8180:8180\n    - 8545:8545\n    - 8546:8546\n    - 30303:30303/udp@g" docker-compose.yml
+  sed -i "s@container_name: $1@&\n    ports:\n    - 3079:3079\n    - 3778:3778\n    - 3067:3067\n    - 30303:30303/udp@g" docker-compose.yml
 
 }
 
